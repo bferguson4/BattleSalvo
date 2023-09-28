@@ -114,7 +114,6 @@ public class BattleController extends InterfaceController {
     });
   }
 
-
   private void runSalvo() {
     setScene("battle.fxml");
     displayBoards();
