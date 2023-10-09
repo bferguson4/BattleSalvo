@@ -114,6 +114,9 @@ public class BattleController extends InterfaceController {
     });
   }
 
+  /**
+   * Runs the rounds of BattleSalvo
+   */
   private void runSalvo() {
     setScene("battle.fxml");
     displayBoards();
@@ -150,6 +153,12 @@ public class BattleController extends InterfaceController {
     });
   }
 
+  /**
+   * Handles the shots manually taken by the player
+   *
+   * @param shots The shots already taken
+   * @return The chosen shot
+   */
   private Coord takeShot(List<Coord> shots) {
     List<Coord> availableShots = getRemainingShots();
     try {
@@ -166,6 +175,12 @@ public class BattleController extends InterfaceController {
     }
   }
 
+
+  /**
+   * Gets the remaining shots for the manual player
+   *
+   * @return  A list of the remaining shots
+   */
   private List<Coord> getRemainingShots() {
     List<Coord> remainingCoords = new ArrayList<>();
     for (int r = 0; r < board2.size(); r++) {
@@ -179,7 +194,9 @@ public class BattleController extends InterfaceController {
     return remainingCoords;
   }
 
-
+  /**
+   * Displays each of the boards on the interface
+   */
   private void displayBoards() {
     yourBox.getChildren().clear();
     enemyBox.getChildren().clear();
@@ -189,6 +206,12 @@ public class BattleController extends InterfaceController {
     enemyBox.getChildren().add(player2Board);
   }
 
+  /**
+   * Displays a given board onto the interface
+   *
+   * @param board The given board
+   * @return A GridPane representing the board
+   */
   @FXML
   private static GridPane displayBoard(List<List<Peg>> board) {
     GridPane boardPane = new GridPane();

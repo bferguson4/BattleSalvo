@@ -20,6 +20,9 @@ public class StartController implements Controller {
     this.stage = stage;
   }
 
+  /**
+   * Runs the start of the battle field application
+   */
   public void run() {
     startButton.setOnAction(event -> {
       Controller bc = new BattleController(stage);

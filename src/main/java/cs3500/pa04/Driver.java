@@ -21,35 +21,14 @@ import javafx.stage.Stage;
  */
 public class Driver extends Application {
 
-
-
-//  private static Socket getSocket(String host, String portStr) {
-//    int port;
-//    try {
-//      port = Integer.parseInt(portStr);
-//    } catch (NumberFormatException e) {
-//      throw new IllegalArgumentException("Port not an Integer");
-//    }
-//    try {
-//      return new Socket(host, port);
-//    } catch (IOException e) {
-//      throw new RuntimeException(e.getMessage());
-//    }
-//  }
-
-  //    List<List<Peg>> board1 = new ArrayList<>();
-//    List<List<Peg>> board2 = new ArrayList<>();
-//    if (args.length == 0) {
-//      Controller bc = new BattleController(new AiPlayer(new Random(1), board1, board2),
-//          new AiPlayer(new Random()), board1, board2);
-//      bc.run();
-//    } else if (args.length == 2) {
-//      Socket server = getSocket(args[0], args[1]);
-//      Controller pc = new ProxyController(new AiPlayer(new Random(1), board1, board2),
-//          server, board1, board2);
-//      pc.run();
-//    }
-
+  /**
+   * Starts the application for BattleSalvo
+   *
+   * @param stage the primary stage for this application, onto which
+   * the application scene can be set.
+   * Applications may create other stages, if needed, but they will not be
+   * primary stages.
+   */
   public void start(Stage stage) {
     StartController sc = new StartController(stage);
     SceneLoader loader = new SceneLoader(sc, "splash.fxml");
