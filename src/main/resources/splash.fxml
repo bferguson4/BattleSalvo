@@ -17,7 +17,7 @@
          <VBox alignment="TOP_CENTER" layoutX="132.0" layoutY="112.0" prefHeight="277.0" prefWidth="536.0" spacing="20.0">
             <children>
                <Region prefHeight="39.0" prefWidth="800.0" />
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Battleship!">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to BattleSalvo!">
                   <font>
                      <Font name="Dubai Medium" size="42.0" />
                   </font>
